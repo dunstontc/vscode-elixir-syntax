@@ -1,7 +1,12 @@
 {
   "repository": {
     "keyword": {
-      "patterns": []
+      "patterns": [
+        {
+          "match": "(?<!\\.)\\b(alias|require|import|use)\\b(?![?!])",
+          "name": "keyword.other.special-method.elixir",
+        },
+      ]
     }
   }
 }

@@ -3,14 +3,31 @@
     "string": {
       "patterns": [
         {
-          "name": "string.quoted.single.elixir",
+          "comment": "single quoted string (allows for interpolation)",
           "begin": "'",
-          "end": "'",
+          "beginCaptures": {"0": {"name": "punctuation.definition.string.begin.elixir"}},
+          "end": "'|\\n",
+          "endCaptures": {"0": {"name": "punctuation.definition.string.end.elixir"}},
+          "name": "support.function.variable.quoted.single.elixir",
+          "patterns": [{"include": "#interoplated_elixir"},{"include": "#escaped_char"}]
         },
+        // {
+        //   "comment": "double quoted string (allows for interpolation)",
+        //   "begin": "\"",
+        //   "beginCaptures": {"0": {"name": "punctuation.definition.string.begin.elixir"}},
+        //   "end": "\"\\n",
+        //   "endCaptures": {"0": {"name": "punctuation.definition.string.end.elixir"}},
+        //   "name": "string.quoted.double.elixir",
+        //   "patterns": [{"include": "#interoplated_elixir"},{"include": "#escaped_char"}]
+        // },
         {
-          "name": "string.quoted.double.elixir",
-          "begin": "\"",
-          "end": "\"",
+          "comment": "triple quoted string (allows for interpolation)",
+          "begin": "\"\"\"",
+          "beginCaptures": {"0": {"name": "punctuation.definition.string.begin.elixir"}},
+          "end": "\"\"\"",
+          "endCaptures": {"0": {"name": "punctuation.definition.string.end.elixir"}},
+          "name": "string.quoted.triple.elixir",
+          "patterns": [{"include": "#interoplated_elixir"},{"include": "#escaped_char"}]
         },
       ]
     }

@@ -1,7 +1,22 @@
 {
   "repository": {
     "comment": {
-      "patterns": []
+      "patterns": [
+        {
+          "begin": "#",
+          "beginCaptures": {"0": {"name": "punctuation.definition.comment.elixir"}},
+          "end": "\\n",
+          "name": "comment.line.number-sign.elixir"
+        },
+        {
+          "match": "\\b_([\\w]+[?!]?)",
+          "name": "comment.unused.elixir"
+        },
+        {
+          "match": "\\b_\\b",
+          "name": "comment.wildcard.elixir"
+        },
+      ]
     }
   }
 }

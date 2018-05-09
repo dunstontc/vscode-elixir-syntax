@@ -11,18 +11,29 @@
     "bugs": {
         "url": "https://github.com/dunstontc/vscode-elixir-syntax/issues"
     },
-    "scripts": {"start": "gulp watch"},
-    "engines": {"vscode": "^1.20.0"},
-    "categories": ["Programming Languages"],
+    "scripts": {
+        "start": "gulp watch"
+    },
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
     "contributes": {
         "languages": [
             {
                 "id": "elixir",
-                "aliases": ["elixir"],
-                "extensions": [".ex", ".exs"],
-                "filenames": ["elixirfile"],
-                "firstLine": "^...",
-                "configuration": "./language-configuration.json"
+                "aliases": [
+                    "elixir"
+                ],
+                "extensions": [
+                    ".ex",
+                    ".exs"
+                ],
+                "filenames": [],
+                "firstLine": "^#!/.*\\belixir",
+                "configuration": "./syntaxes/elixir.configuration.json"
             }
         ],
         "grammars": [
