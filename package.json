@@ -1,25 +1,17 @@
 {
     "name": "vscode-elixir-syntax",
     "displayName": "vscode-elixir-syntax",
-    "description": "Syntax highlighting for elixir.",
+    "description": "Syntax highlighting for elixir. (WIP)",
     "version": "0.0.1",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",
         "url": "https://github.com/dunstontc/vscode-elixir-syntax.git"
     },
-    "bugs": {
-        "url": "https://github.com/dunstontc/vscode-elixir-syntax/issues"
-    },
-    "scripts": {
-        "start": "gulp watch"
-    },
-    "engines": {
-        "vscode": "^1.20.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
+    "bugs": {"url": "https://github.com/dunstontc/vscode-elixir-syntax/issues"},
+    "scripts": {"start": "gulp watch"},
+    "engines": {"vscode": "^1.20.0"},
+    "categories": ["Programming Languages"],
     "contributes": {
         "languages": [
             {
@@ -48,6 +40,7 @@
         "color": "#1e1e1e",
         "theme": "dark"
     },
+    "icon": "assets/128.png",
     "devDependencies": {
         "gulp": "^3.9.1",
         "gulp-json5-to-json": "^0.2.1",

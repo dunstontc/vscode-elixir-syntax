@@ -3,8 +3,25 @@
     "keyword": {
       "patterns": [
         {
-          "match": "(?<!\\.)\\b(alias|require|import|use)\\b(?![?!])",
+          "name": "keyword.control.elixir",
+          "match": "(?<!\\.)\\b(do|end|case|bc|lc|for|if|cond|with|unless|try|receive|fn|defmodule|defprotocol|defimpl|defrecordp?|defstruct|defdelegate|defcallback|defexception|defoverridable|defguardp?|exit|after|rescue|catch|else|raise|throw|quote|unquote|super|when|and|or|not|in)\\b(?![?!])",
+        },
+        {
           "name": "keyword.other.special-method.elixir",
+          "match": "(?<!\\.)\\b(alias|require|import|use)\\b(?![?!])",
+        },
+        {
+          "comment": "Function without parameters",
+          "match": "\\b(defp?|defmacrop?)\\b\\s*([_$a-z][$\\w]*[!?]?)",
+          "captures": {
+            "1": {"name": "keyword.control.elixir"},
+            "2": {"name": "entity.name.function.elixir"}
+          }
+        },
+        {
+          "comment": " as above, just doesn't need a 'end' and does a logic operation",
+          "name": "keyword.operator.elixir",
+          "match": "(?<!\\.)\\b(and|not|or|when|xor|in|inlist|inbits)\\b",
         },
       ]
     }

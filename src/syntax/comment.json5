@@ -3,18 +3,18 @@
     "comment": {
       "patterns": [
         {
+          "name": "comment.line.number-sign.elixir",
           "begin": "#",
-          "beginCaptures": {"0": {"name": "punctuation.definition.comment.elixir"}},
           "end": "\\n",
-          "name": "comment.line.number-sign.elixir"
+          "beginCaptures": {"0": {"name": "punctuation.definition.comment.elixir"}},
         },
         {
           "match": "\\b_([\\w]+[?!]?)",
-          "name": "comment.unused.elixir"
+          "name": "comment.unused.elixir",
         },
         {
           "match": "\\b_\\b",
-          "name": "comment.wildcard.elixir"
+          "name": "comment.wildcard.elixir",
         },
       ]
     }

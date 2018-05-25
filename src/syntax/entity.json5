@@ -3,8 +3,8 @@
     "entity": {
       "patterns": [
         {
-          "match": "[a-zA-Z_]+(?=\\()",
           "name": "entity.name.function.elixir",
+          "match": "[a-zA-Z_?]+(?=\\()",
         }
       ]
     }

@@ -5,17 +5,15 @@ const json5 = require('gulp-json5-to-json');
 gulp.task('default', () => { });
 
 gulp.task('compile-json', () => {
-  gulp.src('./src/**/*.json5')
+  gulp.src('./src/syntax/*.json5')
     .pipe(merge({
       fileName: "elixir.tmLanguage.json",
       json5: true,
     }))
-    .pipe(json5({
-      beautify: true,
-    }))
+    .pipe(json5({beautify: true}))
     .pipe(gulp.dest('./syntaxes'));
 });
 
 gulp.task('watch', () => {
-  gulp.watch('./src/**/*.json5', [ 'compile-json' ]);
+  gulp.watch('./src/**/*.json5', ['compile-json']);
 });
