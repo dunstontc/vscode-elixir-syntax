@@ -40,7 +40,7 @@
         "color": "#1e1e1e",
         "theme": "dark"
     },
-    "icon": "assets/128.png",
+    "icon": "assets/elixir.png",
     "devDependencies": {
         "gulp": "^3.9.1",
         "gulp-json5-to-json": "^0.2.1",
