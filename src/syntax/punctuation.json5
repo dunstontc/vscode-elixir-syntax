@@ -1,7 +1,36 @@
 {
   "repository": {
     "punctuation": {
-      "patterns": []
+      "patterns": [
+        {
+          "match": "\\;",
+          "name": "punctuation.separator.statement.elixir",
+        },
+        {
+          "match": ",",
+          "name": "punctuation.separator.object.elixir",
+        },
+        {
+          "match": "\\.",
+          "name": "punctuation.separator.method.elixir",
+        },
+        {
+          "match": "\\{|\\}",
+          "name": "punctuation.section.scope.elixir",
+        },
+        {
+          "match": "\\[\\]|\\[|\\]",
+          "name": "punctuation.section.array.elixir",
+        },
+        {
+          "match": "\\(|\\)",
+          "name": "punctuation.section.function.elixir",
+        },
+        {
+          "match": ":",
+          "name": "punctuation.separator.other.elixir",
+        }
+      ]
     }
   }
 }

@@ -3,6 +3,55 @@
     "comment": {
       "patterns": [
         {
+          "comment": "@doc with interpolated heredocs",
+          "name": "comment.documentation.heredoc.elixir",
+          "begin": "@(module|type)?doc (~s)?\"\"\"",
+          "end": "\\s*\"\"\"",
+          "patterns": [
+            {"include": "#interoplated_elixir"},
+            {"include": "#escaped_char"}
+          ]
+        },
+        {
+          "comment": "@doc with interpolated single quoted heredocs",
+          "name": "comment.documentation.heredoc.elixir",
+          "begin": "@(module|type)?doc ~s'''",
+          "end": "\\s*'''",
+          "patterns": [
+            {"include": "#interoplated_elixir"},
+            {"include": "#escaped_char"}
+          ]
+        },
+        {
+          "comment": "@doc with heredocs is treated as documentation",
+          "name": "comment.documentation.heredoc.elixir",
+          "begin": "@(module|type)?doc ~S\"\"\"",
+          "end": "\\s*\"\"\"",
+          "patterns": [{"include": "#escaped_char"}]
+        },
+        {
+          "comment": "@doc with heredocs is treated as documentation",
+          "name": "comment.documentation.heredoc.elixir",
+          "begin": "@(module|type)?doc ~S'''",
+          "end": "\\s*'''",
+          "patterns": [{"include": "#escaped_char"}]
+        },
+        {
+          "comment": "@doc false is treated as documentation",
+          "name": "comment.documentation.false",
+          "match": "@(module|type)?doc false",
+        },
+        {
+          "begin": "@(module|type)?doc \"",
+          "comment": "@doc with string is treated as documentation",
+          "end": "\"",
+          "name": "comment.documentation.string",
+          "patterns": [
+            {"include": "#interoplated_elixir"},
+            {"include": "#escaped_char"}
+          ]
+        },
+        {
           "name": "comment.line.number-sign.elixir",
           "begin": "#",
           "end": "\\n",

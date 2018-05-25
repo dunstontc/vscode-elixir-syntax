@@ -4,8 +4,16 @@
       "patterns": [
         {
           "name": "entity.name.function.elixir",
-          "match": "[a-zA-Z_?]+(?=\\()",
-        }
+          "match": "[a-zA-Z_?!]+(?=[(])",
+        },
+        {
+          "captures": {
+            "1": {"name": "keyword.control.module.elixir"},
+            "2": {"name": "entity.name.type.module.elixir"}
+          },
+          "match": "^\\s*(defmodule)\\s+(([A-Z]\\w*\\s*(\\.)\\s*)*[A-Z]\\w*)",
+          // "name": "meta.module.elixir"
+        },
       ]
     }
   }

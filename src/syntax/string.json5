@@ -1,5 +1,37 @@
 {
   "repository": {
+    "escaped_char": {
+      "patterns": [
+        {
+          "match": "\\\\(?:[0-7]{1,3}|x[\\da-fA-F]{1,2}|.)",
+          "name": "constant.character.escape.elixir"
+        }
+      ],
+    },
+    "interpolated_elixir": {
+      "patterns": [
+        {
+          "captures": {
+            "0": {"name": "punctuation.section.embedded.elixir"},
+            "1": {"name": "source.elixir.embedded.source.empty"}
+          },
+          "match": "#\\{(\\})",
+          "name": "source.elixir.embedded.source"
+        },
+        {
+          "begin": "#\\{",
+          "captures": {
+            "0": {"name": "punctuation.section.embedded.elixir"}
+          },
+          "end": "\\}",
+          "name": "source.elixir.embedded.source",
+          // "patterns": [
+          //   {"include": "#nest_curly_and_self"},
+          //   {"include": "$self"}
+          // ]
+        }
+      ]
+    },
     "string": {
       "patterns": [
         {

@@ -1,7 +1,33 @@
 {
   "repository": {
     "operator": {
-      "patterns": []
+      "patterns": [
+        {
+          "match": "(\\|\\|\\||&&&|\\^\\^\\^|<<<|>>>|~~~)",
+          "name": "keyword.operator.bitwise.elixir"
+        },
+        {
+          "comment": "matches: | ++ -- ** \\ <- <> << >> :: .. |> => -> <|> <~> <~ <<~ ~> ~>>",
+          "match": "\\+\\+|\\-\\-|\\*\\*|\\\\\\\\|\\<\\-|<\\<\\~|\\<\\>|\\<\\<|\\>\\>|\\:\\:|\\.\\.|\\|>|=>|<\\|\\>|<~>|->|~>>|~>|<~|(?<!\\|)\\|(?!\\|)",
+          "name": "keyword.operator.other.elixir"
+        },
+        {
+          "match": "===?|!==?|<=?|>=?|=~",
+          "name": "keyword.operator.comparison.elixir"
+        },
+        {
+          "match": "(?<=[ \\t])!+|\\bnot\\b|&&|\\band\\b|\\|\\||\\bor\\b|\\bxor\\b",
+          "name": "keyword.operator.logical.elixir"
+        },
+        {
+          "match": "(\\*|\\+|\\-|/)",
+          "name": "keyword.operator.arithmetic.elixir"
+        },
+        {
+          "match": "=",
+          "name": "keyword.operator.assignment.elixir"
+        },
+      ]
     }
   }
 }
