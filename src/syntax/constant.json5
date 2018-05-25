@@ -3,8 +3,8 @@
     "constant": {
       "patterns": [
         {
+          "name": "constant.language.elixir",
           "match": "\\b(nil|true|false)\\b(?![?!])",
-          "name": "constant.language.elixir"
         },
         {
           "name": "constant.numeric.elixir",
@@ -12,14 +12,14 @@
           "match": "(?<!\\w)\\?(\\\\(x\\h{1,2}(?!\\h)\\b|0[0-7]{0,2}(?![0-7])\\b|[^x0MC])|(\\\\[MC]-)+\\w|[^\\s\\\\])",
         },
         {
+          "name": "constant.numeric.elixir",
           "match": "\\b(0[xX]\\h(?>_?\\h)*|\\d(?>_?\\d)*(\\.(?![^[:space:][:digit:]])(?>_?\\d)*)?([eE][-+]?\\d(?>_?\\d)*)?|0[bB][01]+)\\b",
-          "name": "constant.numeric.elixir"
         },
-        {
-          "name": "constant.other.symbol.elixir",
-          "captures": {"1": {"name": "punctuation.definition.constant.elixir"}},
-          "match": "(?>[a-zA-Z_][\\w@]*(?>[?!])?)(:)(?!:)",
-        },
+        // {
+        //   "name": "constant.other.symbol.elixir",
+        //   "captures": {"1": {"name": "punctuation.definition.constant.elixir"}},
+        //   "match": "(?>[a-zA-Z_][\\w@]*(?>[?!])?)(:)(?!:)",
+        // },
         {
           "comment": "symbols",
           "captures": {"1": {"name": "punctuation.definition.constant.elixir"}},

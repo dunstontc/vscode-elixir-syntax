@@ -1036,11 +1036,11 @@
     //   "match": "\\(|\\)",
     //   "name": "punctuation.section.function.elixir"
     // },
-    {
-      "captures": {"1": {"name": "punctuation.definition.variable.elixir"}},
-      "match": "(@)[a-zA-Z_]\\w*",
-      "name": "variable.other.readwrite.module.elixir"
-    },
+    // {
+    //   "captures": {"1": {"name": "punctuation.definition.variable.elixir"}},
+    //   "match": "(@)[a-zA-Z_]\\w*",
+    //   "name": "variable.other.readwrite.module.elixir"
+    // },
     // {
     //   "captures": {"1": {"name": "punctuation.definition.variable.elixir"}},
     //   "match": "(&)\\d*",

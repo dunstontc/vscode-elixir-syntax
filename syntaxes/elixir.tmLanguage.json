@@ -144,8 +144,8 @@
         "constant": {
             "patterns": [
                 {
-                    "match": "\\b(nil|true|false)\\b(?![?!])",
-                    "name": "constant.language.elixir"
+                    "name": "constant.language.elixir",
+                    "match": "\\b(nil|true|false)\\b(?![?!])"
                 },
                 {
                     "name": "constant.numeric.elixir",
@@ -153,17 +153,8 @@
                     "match": "(?<!\\w)\\?(\\\\(x\\h{1,2}(?!\\h)\\b|0[0-7]{0,2}(?![0-7])\\b|[^x0MC])|(\\\\[MC]-)+\\w|[^\\s\\\\])"
                 },
                 {
-                    "match": "\\b(0[xX]\\h(?>_?\\h)*|\\d(?>_?\\d)*(\\.(?![^[:space:][:digit:]])(?>_?\\d)*)?([eE][-+]?\\d(?>_?\\d)*)?|0[bB][01]+)\\b",
-                    "name": "constant.numeric.elixir"
-                },
-                {
-                    "name": "constant.other.symbol.elixir",
-                    "captures": {
-                        "1": {
-                            "name": "punctuation.definition.constant.elixir"
-                        }
-                    },
-                    "match": "(?>[a-zA-Z_][\\w@]*(?>[?!])?)(:)(?!:)"
+                    "name": "constant.numeric.elixir",
+                    "match": "\\b(0[xX]\\h(?>_?\\h)*|\\d(?>_?\\d)*(\\.(?![^[:space:][:digit:]])(?>_?\\d)*)?([eE][-+]?\\d(?>_?\\d)*)?|0[bB][01]+)\\b"
                 },
                 {
                     "comment": "symbols",
@@ -413,6 +404,15 @@
                     }
                 },
                 {
+                    "name": "variable.other.readwrite.module.elixir",
+                    "match": "(@)[a-zA-Z_]\\w*",
+                    "captures": {
+                        "1": {
+                            "name": "punctuation.definition.variable.elixir"
+                        }
+                    }
+                },
+                {
                     "name": "variable.other.anonymous.elixir",
                     "match": "(&)\\d*",
                     "captures": {
@@ -422,16 +422,12 @@
                     }
                 },
                 {
-                    "match": "[_$a-z][$\\w]*[?!]?",
-                    "name": "parameter.variable.function.elixir"
+                    "name": "variable.language.elixir",
+                    "match": "\\b(__(CALLER|ENV|MODULE|DIR)__)\\b(?![?!])"
                 },
                 {
-                    "match": "\\b(__(CALLER|ENV|MODULE|DIR)__)\\b(?![?!])",
-                    "name": "variable.language.elixir"
-                },
-                {
-                    "match": "\\b[A-Z]\\w*\\b",
-                    "name": "variable.other.constant.elixir"
+                    "name": "variable.other.constant.elixir",
+                    "match": "\\b[A-Z]\\w*\\b"
                 }
             ]
         }

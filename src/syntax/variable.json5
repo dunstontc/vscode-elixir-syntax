@@ -8,21 +8,26 @@
           "captures": {"1": {"name": "punctuation.definition.variable.elixir"}},
         },
         {
+          "name": "variable.other.readwrite.module.elixir",
+          "match": "(@)[a-zA-Z_]\\w*",
+          "captures": {"1": {"name": "punctuation.definition.variable.elixir"}},
+        },
+        {
           "name": "variable.other.anonymous.elixir",
           "match": "(&)\\d*",
           "captures": {"1": {"name": "punctuation.definition.variable.elixir"}},
         },
+        // {
+        //   "match": "[_$a-z][$\\w]*[?!]?",
+        //   "name": "parameter.variable.function.elixir",
+        // },
         {
-          "match": "[_$a-z][$\\w]*[?!]?",
-          "name": "parameter.variable.function.elixir"
-        },
-        {
+          "name": "variable.language.elixir",
           "match": "\\b(__(CALLER|ENV|MODULE|DIR)__)\\b(?![?!])",
-          "name": "variable.language.elixir"
         },
         {
+          "name": "variable.other.constant.elixir",
           "match": "\\b[A-Z]\\w*\\b",
-          "name": "variable.other.constant.elixir"
         },
       ]
     }
