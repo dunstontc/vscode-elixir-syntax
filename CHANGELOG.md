@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.4 *(2018-05-30)*
+- Improvements to variable highlighting.
+
 ## 0.0.3 *(2018-05-25)*
 - Fix bad pattern causing most anything to match as a variable.
 

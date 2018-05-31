@@ -4,7 +4,7 @@
       "patterns": [
         {
           "name": "entity.name.function.elixir",
-          "match": "[a-zA-Z_?!]+(?=[(])",
+          "match": "[a-zA-Z0-9_?!]+(?=[(])",
         },
         {
           "captures": {

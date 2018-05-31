@@ -3,31 +3,37 @@
     "variable": {
       "patterns": [
         {
-          "name": "variable.other.readwrite.module.elixir",
-          "match": "(@)[a-zA-Z_]\\w*",
-          "captures": {"1": {"name": "punctuation.definition.variable.elixir"}},
+          "name": "variable.other.param.elixir",
+          "match": "(?<=\\()[a-zA-Z_]+(?=\\))",
         },
         {
           "name": "variable.other.readwrite.module.elixir",
           "match": "(@)[a-zA-Z_]\\w*",
           "captures": {"1": {"name": "punctuation.definition.variable.elixir"}},
+        },
+        {
+          "name": "variable.other.elixir",
+          "match": "[a-zA-Z_]\\w+(?=:)",
+        },
+        {
+          "name": "variable.other.elixir",
+          "match": "[a-zA-Z_]\\w+(?=\\s=)",
         },
         {
           "name": "variable.other.anonymous.elixir",
           "match": "(&)\\d*",
           "captures": {"1": {"name": "punctuation.definition.variable.elixir"}},
         },
-        // {
-        //   "match": "[_$a-z][$\\w]*[?!]?",
-        //   "name": "parameter.variable.function.elixir",
-        // },
         {
           "name": "variable.language.elixir",
           "match": "\\b(__(CALLER|ENV|MODULE|DIR)__)\\b(?![?!])",
         },
         {
-          "name": "variable.other.constant.elixir",
-          "match": "\\b[A-Z]\\w*\\b",
+          "match": "(%)?\\b([A-Z]\\w+)\\b",
+          "captures": {
+            "1": {"name": "variable.other.constant.elixir"},
+            "2": {"name": "variable.other.constant.elixir"},
+          },
         },
       ]
     }
