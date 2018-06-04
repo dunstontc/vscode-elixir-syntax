@@ -3,8 +3,20 @@
     "variable": {
       "patterns": [
         {
+          "match": "(?<=\\()([a-zA-Z_]+)(,\\s)([a-zA-Z_]+)(?=\\))",
+          "captures": {
+            "1": {"name": "variable.other.param.elixir"},
+            "2": {"name": "punctuation.separator.object.elixir"},
+            "3": {"name": "variable.other.param.elixir"},
+          },
+        },
+        {
           "name": "variable.other.param.elixir",
           "match": "(?<=\\()[a-zA-Z_]+(?=\\))",
+        },
+        {
+          "name": "variable.other.access.elixir",
+          "match": "([a-zA-Z_]+)(?=\\[)",
         },
         {
           "name": "variable.other.readwrite.module.elixir",
