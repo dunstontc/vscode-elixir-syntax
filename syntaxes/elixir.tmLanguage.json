@@ -351,14 +351,15 @@
                 }
             ]
         },
-        "invalid": {
-            "patterns": []
-        },
         "keyword": {
             "patterns": [
                 {
                     "name": "keyword.control.elixir",
                     "match": "(?<!\\.)\\b(do|end|case|bc|lc|for|if|cond|with|unless|try|receive|fn|defmodule|defprotocol|defimpl|defrecordp?|defstruct|defdelegate|defcallback|defexception|defoverridable|defguardp?|exit|after|rescue|catch|else|raise|throw|quote|unquote|super|when|and|or|not|in)\\b(?![?!])"
+                },
+                {
+                    "name": "keyword.control.elixir",
+                    "match": "(?<=do)[:]"
                 },
                 {
                     "name": "keyword.control.elixir",
@@ -386,9 +387,6 @@
                     "match": "(?<!\\.)\\b(and|not|or|when|xor|in|inlist|inbits)\\b"
                 }
             ]
-        },
-        "meta": {
-            "patterns": []
         },
         "operator": {
             "patterns": [
@@ -446,9 +444,6 @@
                     "name": "punctuation.separator.other.elixir"
                 }
             ]
-        },
-        "storage": {
-            "patterns": []
         },
         "string": {
             "patterns": [
@@ -579,12 +574,6 @@
                 }
             ]
         },
-        "support": {
-            "patterns": []
-        },
-        "type": {
-            "patterns": []
-        },
         "variable": {
             "patterns": [
                 {
@@ -606,7 +595,7 @@
                         },
                         {
                             "name": "variable.other.param.elixir",
-                            "match": "[a-zA-Z][a-zA-Z0-9_]+"
+                            "match": "[a-zA-Z]([a-zA-Z0-9_]+)?"
                         }
                     ]
                 },

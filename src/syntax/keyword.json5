@@ -8,6 +8,10 @@
         },
         {
           "name": "keyword.control.elixir",
+          "match": "(?<=do)[:]",
+        },
+        {
+          "name": "keyword.control.elixir",
           "match": "(?<!\\.)\\b(test)\\b(?![?!])",
         },
         {

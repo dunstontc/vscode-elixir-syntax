@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.10 *(2018-07-06)*
+- Highlight single letter parameters.
+- Highlight `do:` as a single keyword
+
 ## 0.0.9 *(2018-07-06)*
 - Additional improvement to parameter highlighting.
 
