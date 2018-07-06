@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.7 *(2018-07-05)*
+- Highlight multiple params.
+
 ## 0.0.6 *(2018-07-05)*
 - Highlight params with numbers.
 

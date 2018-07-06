@@ -613,7 +613,7 @@
         "variable": {
             "patterns": [
                 {
-                    "match": "(?<=\\()([a-zA-Z_]+)(,\\s)([a-zA-Z_]+)(?=\\))",
+                    "match": "(?<=\\()([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(?=\\))",
                     "captures": {
                         "1": {
                             "name": "variable.other.param.elixir"
@@ -622,6 +622,52 @@
                             "name": "punctuation.separator.object.elixir"
                         },
                         "3": {
+                            "name": "variable.other.param.elixir"
+                        }
+                    }
+                },
+                {
+                    "match": "(?<=\\()([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(?=\\))",
+                    "captures": {
+                        "1": {
+                            "name": "variable.other.param.elixir"
+                        },
+                        "2": {
+                            "name": "punctuation.separator.object.elixir"
+                        },
+                        "3": {
+                            "name": "variable.other.param.elixir"
+                        },
+                        "4": {
+                            "name": "punctuation.separator.object.elixir"
+                        },
+                        "5": {
+                            "name": "variable.other.param.elixir"
+                        }
+                    }
+                },
+                {
+                    "match": "(?<=\\()([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(?=\\))",
+                    "captures": {
+                        "1": {
+                            "name": "variable.other.param.elixir"
+                        },
+                        "2": {
+                            "name": "punctuation.separator.object.elixir"
+                        },
+                        "3": {
+                            "name": "variable.other.param.elixir"
+                        },
+                        "4": {
+                            "name": "punctuation.separator.object.elixir"
+                        },
+                        "5": {
+                            "name": "variable.other.param.elixir"
+                        },
+                        "6": {
+                            "name": "punctuation.separator.object.elixir"
+                        },
+                        "7": {
                             "name": "variable.other.param.elixir"
                         }
                     }
