@@ -24,6 +24,10 @@
               "end": "\\}",
               "name": "source.elixir.embedded.source",
               "patterns": [{"include": "$self"}]
+            },
+            {
+              "match": "\\\\(?:[0-7]{1,3}|x[\\da-fA-F]{1,2}|.)",
+              "name": "constant.character.escape.elixir"
             }
           ]
         },
@@ -49,6 +53,10 @@
               "end": "\\}",
               "name": "source.elixir.embedded.source",
               "patterns": [{"include": "$self"}]
+            },
+            {
+              "match": "\\\\(?:[0-7]{1,3}|x[\\da-fA-F]{1,2}|.)",
+              "name": "constant.character.escape.elixir"
             }
           ]
         },
@@ -74,6 +82,10 @@
               "end": "\\}",
               "name": "source.elixir.embedded.source",
               "patterns": [{"include": "$self"}]
+            },
+            {
+              "match": "\\\\(?:[0-7]{1,3}|x[\\da-fA-F]{1,2}|.)",
+              "name": "constant.character.escape.elixir"
             }
           ]
         },

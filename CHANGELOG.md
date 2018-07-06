@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.11 *(2018-07-06)*
+- Fixed highlighting for escaped characters in strings.
+
 ## 0.0.10 *(2018-07-06)*
 - Highlight single letter parameters.
 - Highlight `do:` as a single keyword
