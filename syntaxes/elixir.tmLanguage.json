@@ -631,8 +631,12 @@
                     "match": "(?<=\\()[a-zA-Z_]+(?=\\))"
                 },
                 {
+                    "name": "variable.other.param.elixir",
+                    "match": "(?<=\\()[a-zA-Z_][a-zA-Z0-9_]+(?=\\))"
+                },
+                {
                     "name": "variable.other.access.elixir",
-                    "match": "([a-zA-Z_]+)(?=\\[)"
+                    "match": "([a-zA-Z_][a-zA-Z0-9_]+)(?=\\[)"
                 },
                 {
                     "name": "variable.other.readwrite.module.elixir",

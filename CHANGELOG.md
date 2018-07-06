@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.6 *(2018-07-05)*
+- Highlight params with numbers.
+
 ## 0.0.5 *(2018-06-04)*
 - Defined `var["access"]` as `variable.access`.
 - Highlight function params as variables (still needs work).
