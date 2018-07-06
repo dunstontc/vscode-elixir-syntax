@@ -3,7 +3,7 @@
   "name": "Elixir",
   "scopeName": "source.elixir",
   "patterns": [
-    { "include": "#escaped_char" },
+    // { "include": "#escaped_char" },
     { "include": "#interpolated_elixir" },
     { "include": "#constant" },
     { "include": "#comment" },
@@ -81,12 +81,12 @@
       "captures": {"0": {"name": "punctuation.section.scope.elixir"}},
       "patterns": [{"include": "#nest_ltgt"}]
     },
-    "nest_parens": {
-      "begin": "\\(",
-      "end": "\\)",
-      "captures": {"0": {"name": "punctuation.section.scope.elixir"}},
-      "patterns": [{"include": "#nest_parens"}]
-    },
+    // "nest_parens": {
+    //   "begin": "\\(",
+    //   "end": "\\)",
+    //   "captures": {"0": {"name": "punctuation.section.scope.elixir"}},
+    //   "patterns": [{"include": "#nest_parens"}]
+    // },
     "regex_sub": {
       "name": "string.interpolated.regexp.elixir",
       "patterns": [

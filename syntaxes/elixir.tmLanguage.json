@@ -4,9 +4,6 @@
     "scopeName": "source.elixir",
     "patterns": [
         {
-            "include": "#escaped_char"
-        },
-        {
             "include": "#interpolated_elixir"
         },
         {
@@ -145,20 +142,6 @@
             "patterns": [
                 {
                     "include": "#nest_ltgt"
-                }
-            ]
-        },
-        "nest_parens": {
-            "begin": "\\(",
-            "end": "\\)",
-            "captures": {
-                "0": {
-                    "name": "punctuation.section.scope.elixir"
-                }
-            },
-            "patterns": [
-                {
-                    "include": "#nest_parens"
                 }
             ]
         },
@@ -325,10 +308,6 @@
         "constant": {
             "patterns": [
                 {
-                    "match": "\\\\(?:[0-7]{1,3}|x[\\da-fA-F]{1,2}|.)",
-                    "name": "constant.character.escape.elixir"
-                },
-                {
                     "name": "constant.language.elixir",
                     "match": "\\b(nil|true|false)\\b(?![?!])"
                 },
@@ -461,10 +440,6 @@
                 {
                     "match": "\\[\\]|\\[|\\]",
                     "name": "punctuation.section.array.elixir"
-                },
-                {
-                    "match": "\\(|\\)",
-                    "name": "punctuation.section.function.elixir"
                 },
                 {
                     "match": ":",
@@ -613,72 +588,17 @@
         "variable": {
             "patterns": [
                 {
-                    "match": "(?<=\\()([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(?=\\))",
-                    "captures": {
-                        "1": {
-                            "name": "variable.other.param.elixir"
+                    "begin": "\\(",
+                    "end": "\\)",
+                    "patterns": [
+                        {
+                            "name": "variable.other.param.elixir",
+                            "match": "[a-zA-Z][a-zA-Z0-9_]+"
                         },
-                        "2": {
-                            "name": "punctuation.separator.object.elixir"
-                        },
-                        "3": {
-                            "name": "variable.other.param.elixir"
+                        {
+                            "include": "$self"
                         }
-                    }
-                },
-                {
-                    "match": "(?<=\\()([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(?=\\))",
-                    "captures": {
-                        "1": {
-                            "name": "variable.other.param.elixir"
-                        },
-                        "2": {
-                            "name": "punctuation.separator.object.elixir"
-                        },
-                        "3": {
-                            "name": "variable.other.param.elixir"
-                        },
-                        "4": {
-                            "name": "punctuation.separator.object.elixir"
-                        },
-                        "5": {
-                            "name": "variable.other.param.elixir"
-                        }
-                    }
-                },
-                {
-                    "match": "(?<=\\()([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(,\\s?)([a-zA-Z_]+)(?=\\))",
-                    "captures": {
-                        "1": {
-                            "name": "variable.other.param.elixir"
-                        },
-                        "2": {
-                            "name": "punctuation.separator.object.elixir"
-                        },
-                        "3": {
-                            "name": "variable.other.param.elixir"
-                        },
-                        "4": {
-                            "name": "punctuation.separator.object.elixir"
-                        },
-                        "5": {
-                            "name": "variable.other.param.elixir"
-                        },
-                        "6": {
-                            "name": "punctuation.separator.object.elixir"
-                        },
-                        "7": {
-                            "name": "variable.other.param.elixir"
-                        }
-                    }
-                },
-                {
-                    "name": "variable.other.param.elixir",
-                    "match": "(?<=\\()[a-zA-Z_]+(?=\\))"
-                },
-                {
-                    "name": "variable.other.param.elixir",
-                    "match": "(?<=\\()[a-zA-Z_][a-zA-Z0-9_]+(?=\\))"
+                    ]
                 },
                 {
                     "name": "variable.other.access.elixir",

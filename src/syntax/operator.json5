@@ -27,6 +27,14 @@
           "match": "=",
           "name": "keyword.operator.assignment.elixir"
         },
+        // {
+        //   "match": "\\s\\\\\\s",
+        //   "name": "keyword.operator.default-params.elixir"
+        // },
+        // {
+        //   "match": "\\\\(?:[0-7]{1,3}|x[\\da-fA-F]{1,2}|.)",
+        //   "name": "constant.character.escape.elixir"
+        // },
       ]
     }
   }

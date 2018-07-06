@@ -20,14 +20,10 @@
             },
             {
               "begin": "#\\{",
-              "captures": {
-                "0": {"name": "punctuation.section.embedded.elixir"}
-              },
+              "captures": {"0": {"name": "punctuation.section.embedded.elixir"}},
               "end": "\\}",
               "name": "source.elixir.embedded.source",
-              "patterns": [
-                {"include": "$self"}
-              ]
+              "patterns": [{"include": "$self"}]
             }
           ]
         },
@@ -49,14 +45,10 @@
             },
             {
               "begin": "#\\{",
-              "captures": {
-                "0": {"name": "punctuation.section.embedded.elixir"}
-              },
+              "captures": {"0": {"name": "punctuation.section.embedded.elixir"}},
               "end": "\\}",
               "name": "source.elixir.embedded.source",
-              "patterns": [
-                {"include": "$self"}
-              ]
+              "patterns": [{"include": "$self"}]
             }
           ]
         },
@@ -78,14 +70,10 @@
             },
             {
               "begin": "#\\{",
-              "captures": {
-                "0": {"name": "punctuation.section.embedded.elixir"}
-              },
+              "captures": {"0": {"name": "punctuation.section.embedded.elixir"}},
               "end": "\\}",
               "name": "source.elixir.embedded.source",
-              "patterns": [
-                {"include": "$self"}
-              ]
+              "patterns": [{"include": "$self"}]
             }
           ]
         },

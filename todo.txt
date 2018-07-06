@@ -1,1 +1,3 @@
-2018-07-05 Find a better way to highlight params.
+x 2018-07-06 2018-07-05 Find a better way to highlight params.
+
+2018-07-06 Add back `constant.character.escape.elixir`.
