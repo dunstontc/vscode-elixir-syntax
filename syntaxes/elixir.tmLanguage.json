@@ -590,13 +590,23 @@
                 {
                     "begin": "\\(",
                     "end": "\\)",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.section.function.elixir"
+                        }
+                    },
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.section.function.elixir"
+                        }
+                    },
                     "patterns": [
+                        {
+                            "include": "$self"
+                        },
                         {
                             "name": "variable.other.param.elixir",
                             "match": "[a-zA-Z][a-zA-Z0-9_]+"
-                        },
-                        {
-                            "include": "$self"
                         }
                     ]
                 },

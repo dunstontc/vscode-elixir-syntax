@@ -2,44 +2,6 @@
   "repository": {
     "variable": {
       "patterns": [
-        // {
-        //   "match": "(?<=\\()([a-zA-Z0-9_]+)(,\\s?)([a-zA-Z0-9_]+)(?=\\))",
-        //   "captures": {
-        //     "1": {"name": "variable.other.param.elixir"},
-        //     "2": {"name": "punctuation.separator.object.elixir"},
-        //     "3": {"name": "variable.other.param.elixir"},
-        //   },
-        // },
-        // {
-        //   "match": "(?<=\\()([a-zA-Z0-9_]+)(,\\s?)([a-zA-Z0-9_]+)(,\\s?)([a-zA-Z0-9_]+)(?=\\))",
-        //   "captures": {
-        //     "1": {"name": "variable.other.param.elixir"},
-        //     "2": {"name": "punctuation.separator.object.elixir"},
-        //     "3": {"name": "variable.other.param.elixir"},
-        //     "4": {"name": "punctuation.separator.object.elixir"},
-        //     "5": {"name": "variable.other.param.elixir"},
-        //   },
-        // },
-        // {
-        //   "match": "(?<=\\()([a-zA-Z0-9_]+)(,\\s?)([a-zA-Z0-9_]+)(,\\s?)([a-zA-Z0-9_]+)(,\\s?)([a-zA-Z0-9_]+)(?=\\))",
-        //   "captures": {
-        //     "1": {"name": "variable.other.param.elixir"},
-        //     "2": {"name": "punctuation.separator.object.elixir"},
-        //     "3": {"name": "variable.other.param.elixir"},
-        //     "4": {"name": "punctuation.separator.object.elixir"},
-        //     "5": {"name": "variable.other.param.elixir"},
-        //     "6": {"name": "punctuation.separator.object.elixir"},
-        //     "7": {"name": "variable.other.param.elixir"},
-        //   },
-        // },
-        // {
-        //   "name": "variable.other.param.elixir",
-        //   "match": "(?<=\\()[a-zA-Z_]+(?=\\))",
-        // },
-        // {
-        //   "name": "variable.other.param.elixir",
-        //   "match": "(?<=\\()[a-zA-Z_][a-zA-Z0-9_]+(?=\\))",
-        // },
         {
           // "name": "meta.params.elixir",
           "begin": "\\(",
@@ -47,11 +9,11 @@
           "beginCaptures": {"0": {"name": "punctuation.section.function.elixir"}},
           "endCaptures": {"0": {"name": "punctuation.section.function.elixir"}},
           "patterns": [
+            {"include": "$self"},
             {
               "name": "variable.other.param.elixir",
               "match": "[a-zA-Z][a-zA-Z0-9_]+",
             },
-            {"include": "$self"}
           ],
         },
         {

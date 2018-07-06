@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.9 *(2018-07-06)*
+- Additional improvement to parameter highlighting.
+
 ## 0.0.8 *(2018-07-06)*
 - Refactor parameter highlighting.
 
