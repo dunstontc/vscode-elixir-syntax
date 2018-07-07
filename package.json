@@ -2,7 +2,7 @@
     "name": "vscode-elixir-syntax",
     "displayName": "vscode-elixir-syntax",
     "description": "Syntax highlighting for elixir. (WIP)",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",
@@ -15,7 +15,7 @@
     "contributes": {
         "languages": [
             {
-                "id": "Elixir",
+                "id": "elixir",
                 "aliases": ["Elixir", "elixir"],
                 "extensions": [".ex", ".exs"],
                 "filenames": [],
@@ -37,7 +37,7 @@
         ],
         "grammars": [
             {
-                "language": "Elixir",
+                "language": "elixir",
                 "scopeName": "source.elixir",
                 "path": "./syntaxes/elixir.tmLanguage.json"
             },
