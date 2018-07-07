@@ -2,7 +2,7 @@
     "name": "vscode-elixir-syntax",
     "displayName": "vscode-elixir-syntax",
     "description": "Syntax highlighting for elixir. (WIP)",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",
@@ -15,23 +15,43 @@
     "contributes": {
         "languages": [
             {
-                "id": "elixir",
-                "aliases": ["elixir"],
-                "extensions": [
-                    ".ex",
-                    ".exs"
-                ],
+                "id": "Elixir",
+                "aliases": ["Elixir", "elixir"],
+                "extensions": [".ex", ".exs"],
                 "filenames": [],
                 "firstLine": "^#!/.*\\belixir",
                 "configuration": "./syntaxes/elixir.configuration.json"
+            },
+            {
+              "id": "Eex",
+              "aliases": ["Eex", "eex"],
+              "extensions": [".eex"],
+              "configuration": "./syntaxes/html.eex.configuration.json"
+            },
+            {
+              "id": "HTML (Eex)",
+              "aliases": ["HTML (Eex)"],
+              "extensions": [".html.eex"],
+              "configuration": "./syntaxes/html.eex.configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "elixir",
+                "language": "Elixir",
                 "scopeName": "source.elixir",
                 "path": "./syntaxes/elixir.tmLanguage.json"
+            },
+            {
+              "language": "Eex",
+              "scopeName": "text.elixir",
+              "path": "./syntaxes/eex.tmLanguage.json"
+            },
+            {
+              "language": "HTML (Eex)",
+              "scopeName": "text.html.elixir",
+              "path": "./syntaxes/html.eex.tmLanguage.json"
             }
+
         ]
     },
     "galleryBanner": {

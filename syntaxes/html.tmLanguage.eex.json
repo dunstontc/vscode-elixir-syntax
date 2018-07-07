@@ -1,0 +1,11 @@
+{
+  "name": "HTML (EEx)",
+  "fileTypes": ["html.eex"],
+  "scopeName": "text.html.elixir",
+  "foldingStartMarker": "(?x)\n\t\t(<(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)\\b.*?>\n\t\t|<!--(?!.*-->)\n\t\t|\\{\\s*($|\\?>\\s*$|//|/\\*(.*\\*/\\s*$|(?!.*?\\*/)))\n\t\t)",
+  "foldingStopMarker": "(?x)\n\t\t(</(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)>\n\t\t|^\\s*-->\n\t\t|(^|\\s)\\}\n\t\t)",
+  "patterns": [
+    {"include": "text.elixir"},
+    {"include": "text.html.basic"}
+  ]
+}
