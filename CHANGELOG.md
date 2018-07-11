@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.14 *(2018-07-11)*
+- Fix comments in .eex files.
+
 ## 0.0.13 *(2018-07-07)*
 - Fix improper grammar name.
 
