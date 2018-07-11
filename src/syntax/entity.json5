@@ -6,6 +6,12 @@
           "name": "entity.name.function.elixir",
           "match": "[a-zA-Z0-9_?!]+(?=[(])",
         },
+        // {
+        //   "captures": {
+        //     "1": {"name": "entity.name.function.elixir"},
+        //   },
+        //   "match": "(?<=&)[a-zA-Z0-9_?!]+(?=[(])",
+        // },
         {
           "captures": {
             "1": {"name": "keyword.control.module.elixir"},

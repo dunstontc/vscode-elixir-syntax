@@ -272,8 +272,8 @@
                     "match": "@(module|type)?doc false"
                 },
                 {
-                    "begin": "@(module|type)?doc \"",
                     "comment": "@doc with string is treated as documentation",
+                    "begin": "@(module|type)?doc \"",
                     "end": "\"",
                     "name": "comment.documentation.string",
                     "patterns": [
