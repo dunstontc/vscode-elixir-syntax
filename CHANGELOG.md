@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.15 *(2018-07-12)*
+- Add more specific operator matches:
+  - `|>` - *keyword.operator.pipe.elixir*
+  - `->` - *keyword.operator.arrow.elixir*
+  - `=>` - *keyword.operator.big-arrow.elixir*
+
 ## 0.0.14 *(2018-07-11)*
 - Fix comments in .eex files.
 

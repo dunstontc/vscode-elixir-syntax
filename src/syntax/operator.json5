@@ -3,6 +3,23 @@
     "operator": {
       "patterns": [
         {
+          "match": "->",
+          "name": "keyword.operator.arrow.elixir"
+        },
+        {
+          "match": "=>",
+          "name": "keyword.operator.big-arrow.elixir"
+        },
+        {
+          "match": "\\|>",
+          "name": "keyword.operator.pipe.elixir"
+        },
+        {
+          "match": "=",
+          "name": "keyword.operator.assignment.elixir"
+        },
+        // =====================================================================
+        {
           "match": "(\\|\\|\\||&&&|\\^\\^\\^|<<<|>>>|~~~)",
           "name": "keyword.operator.bitwise.elixir"
         },
@@ -23,10 +40,7 @@
           "match": "(\\*|\\+|\\-|/)",
           "name": "keyword.operator.arithmetic.elixir"
         },
-        {
-          "match": "=",
-          "name": "keyword.operator.assignment.elixir"
-        },
+        // =====================================================================
         // {
         //   "match": "\\s\\\\\\s",
         //   "name": "keyword.operator.default-params.elixir"
