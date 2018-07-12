@@ -1,0 +1,23 @@
+{
+	"EEX Tag": {
+		"prefix": "tag",
+		"body": ["<%= $0 %>",],
+		"description": "Embedded Elixir tag",
+	},
+	"EEX Link": {
+		"prefix": "%link",
+		"body": ["<%= link \"$1\", to $0 %>",],
+	},
+	"EEX End Tag": {
+		"prefix": "end",
+		"body": ["<% end %>"],
+	},
+	"EEX List": {
+		"prefix": "for",
+		"body": [
+      "<%= for $1 <- $2 do %>",
+      "  $0",
+      "<% end %>",
+    ],
+	},
+}
