@@ -6,7 +6,7 @@
 	},
 	"EEX Link": {
 		"prefix": "%link",
-		"body": ["<%= link \"$1\", to $0 %>",],
+		"body": ["<%= link \"$1\", to: $0 %>",],
 	},
 	"EEX End Tag": {
 		"prefix": "end",
@@ -16,6 +16,24 @@
 		"prefix": "for",
 		"body": [
       "<%= for $1 <- $2 do %>",
+      "  $0",
+      "<% end %>",
+    ],
+	},
+	"EEX If": {
+		"prefix": "if",
+		"body": [
+      "<%= if $1 do %>",
+      "  $0",
+      "<% end %>",
+    ],
+	},
+	"EEX If-Else": {
+		"prefix": "ifelse",
+		"body": [
+      "<%= if $1 do %>",
+      "  $2",
+      "<% else %>",
       "  $0",
       "<% end %>",
     ],
