@@ -6,7 +6,7 @@
 
 ## **Work in Progress**
 
-This plugin only provides syntax highlighting and probably isn't the one you're looking for. Please look into [fr1zle/vscode-elixir](https://github.com/fr1zle/vscode-elixir) (which was used as the base of this project) for proper language support.
+This plugin only provides syntax highlighting and probably isn't the one you're looking for. Please look into [JakeBecker/vscode-elixir-ls](https://github.com/JakeBecker/vscode-elixir-ls)  (which was used as the base of this project) for proper language support.
 
 ## Resources
 - [elixir-editors/elixir-tmbundle](https://github.com/elixir-editors/elixir-tmbundle)
