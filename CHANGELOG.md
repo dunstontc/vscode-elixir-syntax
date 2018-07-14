@@ -1,10 +1,14 @@
 # Change Log
 
-## 0.0.15 *(2018-07-12)*
+## 0.0.16 *(2018-07-13)*
+- Correct changelog entry for v0.0.15.
+
+## 0.0.15 *(2018-07-13)*
 - Add more specific operator matches:
   - `|>` - *keyword.operator.pipe.elixir*
   - `->` - *keyword.operator.arrow.elixir*
   - `=>` - *keyword.operator.big-arrow.elixir*
+- Highlight macro names as control keywords.
 
 ## 0.0.14 *(2018-07-11)*
 - Fix comments in .eex files.
