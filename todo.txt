@@ -3,3 +3,4 @@ x 2018-07-06 2018-07-05 Find a better way to highlight params.
 2018-07-06 Add back `constant.character.escape.elixir`.
 2018-07-11 Improve support for EEX
 2018-07-12 Implement "Endwise" functionality for do blocks in .EEX.
+2018-07-13 Find out if `=~` a valid operator (case insensitive match?).

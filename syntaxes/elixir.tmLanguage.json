@@ -362,6 +362,19 @@
                     "match": "(?<=do)[:]"
                 },
                 {
+                    "match": "^\\s+(\\w+)\\s(?=.+do$)",
+                    "captures": {
+                        "1": {
+                            "name": "keyword.control.macro.elixir"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "$self"
+                        }
+                    ]
+                },
+                {
                     "name": "keyword.control.elixir",
                     "match": "(?<!\\.)\\b(test)\\b(?![?!])"
                 },
@@ -401,10 +414,6 @@
                 {
                     "match": "\\|>",
                     "name": "keyword.operator.pipe.elixir"
-                },
-                {
-                    "match": "=",
-                    "name": "keyword.operator.assignment.elixir"
                 },
                 {
                     "match": "(\\|\\|\\||&&&|\\^\\^\\^|<<<|>>>|~~~)",
@@ -642,7 +651,7 @@
                 },
                 {
                     "name": "variable.other.elixir",
-                    "match": "[a-zA-Z_]\\w+(?=\\s=)"
+                    "match": "^\\s+\\w+\\n(?=\\s)"
                 },
                 {
                     "name": "variable.other.anonymous.elixir",

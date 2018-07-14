@@ -11,6 +11,11 @@
           "match": "(?<=do)[:]",
         },
         {
+          "match": "^\\s+(\\w+)\\s(?=.+do$)",
+          "captures": {"1": {"name": "keyword.control.macro.elixir"},},
+          "patterns": [{"include": "$self"}]
+        },
+        {
           "name": "keyword.control.elixir",
           "match": "(?<!\\.)\\b(test)\\b(?![?!])",
         },
